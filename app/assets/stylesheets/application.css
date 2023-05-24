@@ -13,3 +13,50 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: rgb(219, 214, 181);
+}
+
+nav {
+  background-color: rgb(185, 120, 59);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: solid 1px rgb(128, 22, 22);
+}
+
+nav * {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(128, 22, 22);
+}
+
+nav *:hover {
+  color: rgb(255, 123, 0);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.reviews-wrapper {
+  margin-top: 2em;
+}
+
+ul {
+  border-radius: 10px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 32px;
+
+}
+
+li {
+  border-top: solid 1px black;
+}
+
+li:first-of-type {
+  border-style: none;
+}

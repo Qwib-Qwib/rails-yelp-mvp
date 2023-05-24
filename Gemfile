@@ -27,6 +27,12 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Simplify form generation [https://github.com/heartcombo/simple_form]
+gem "simple_form"
+
+# Insert false data in DB for testing purposes [https://github.com/faker-ruby/faker]
+gem "faker"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

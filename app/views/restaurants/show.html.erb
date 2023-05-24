@@ -1,0 +1,17 @@
+<h2><%= @restaurant.name %>, <%= @restaurant.category %> restaurant</h2>
+<p><strong>Address:</strong> <%= @restaurant.address %></p>
+<p><strong>Tel:</strong> <%= @restaurant.phone_number %></p>
+
+<%= render "reviews/form", restaurant: @restaurant, review: @review %>
+
+<div class="reviews-wrapper">
+  <h3>Reviews</h3>
+  <ul>
+    <% @restaurant.reviews.each do |review| %>
+      <li>
+        <p><%= review.content %></p>
+        <p>Rated <%= review.rating %>/5</p>
+      </li>
+    <% end %>
+  </ul>
+</div>
